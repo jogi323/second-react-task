@@ -27,6 +27,10 @@
                 min-width: 25%;
                 border: none;
                 padding: 2%;
+                cursor: pointer;
+            }
+            .disable {
+                cursor: not-allowed;
             }
         }
     }

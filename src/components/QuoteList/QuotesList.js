@@ -28,20 +28,22 @@ class QuotesList extends Component {
       <React.Fragment>
         <div className="quotes-list">
           <h1>List of Quotes:</h1>
-          {this.state.list.map((item,index)=>{
-            return (
-              <section key={item.author}>
-                <article>
-                  <q>{item.quote}</q>
-                  <footer>- {item.author}</footer>
-                  <div className="icons">
-                  <span className="like" onClick={()=>this.liked(index)}>{item.liked?<FontAwesome.FaHeart/>:<FontAwesome.FaHeartO/>}{item.count>0?item.count:null}</span>
-                    <span className="delete" onClick={()=>this.deleteQuote(index)}><FontAwesome.FaTrashO/></span>
-                  </div>
-                </article>
-              </section>
-            )
-          })}
+          <div className="list">
+            {this.state.list.map((item,index)=>{
+              return (
+                <section key={item.author}>
+                  <article>
+                    <blockquote><q>{item.quote}</q></blockquote>
+                    <footer>- {item.author}</footer>
+                    <div className="icons">
+                    <span className="like" onClick={()=>this.liked(index)}>{item.liked?<FontAwesome.FaHeart/>:<FontAwesome.FaHeartO/>}{item.count>0?item.count:null}</span>
+                      <span className="delete" onClick={()=>this.deleteQuote(index)}><FontAwesome.FaTrashO/></span>
+                    </div>
+                  </article>
+                </section>
+              )
+            })}
+          </div>
         </div>
       </React.Fragment>
     )

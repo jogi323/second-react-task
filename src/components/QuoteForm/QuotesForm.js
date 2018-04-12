@@ -48,7 +48,7 @@ class QuotesForm extends Component {
             <textarea name="quote" placeholder="Please enter your quote........" rows="3" value={this.state.quote} onChange={this.handleChange} required></textarea>
           </div>
           <div className="submit">
-            <button onClick={this.submit}>Add Quote</button>
+            <button className={this.state.author.length === 0 || this.state.quote.length === 0 ? "disable":""} onClick={this.submit}>Add Quote</button>
           </div>
         </form>
       </section>
