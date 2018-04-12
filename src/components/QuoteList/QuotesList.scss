@@ -21,5 +21,12 @@
             }
         }
     }
-    
+}
+
+@media only screen and (max-width:600px){
+    .quotes-list {
+        section {
+            width: 100%;
+        }
+    }
 }

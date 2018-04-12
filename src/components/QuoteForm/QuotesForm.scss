@@ -33,7 +33,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    section {
+    .section {
         width: 80%;
         form {
             width: 80%;
@@ -48,7 +48,7 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width:768px){
-    section {
+    .section {
         width: 70%;
         form {
             width: 80%;
@@ -60,7 +60,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
-    section {
+    .section {
         width: 70%;
         form {
             width: 80%;
